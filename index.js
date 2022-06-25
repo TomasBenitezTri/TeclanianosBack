@@ -3,13 +3,6 @@ import cors from 'cors'
 import db from  "./database/db.js"
 import blogRoutes from './routes/routes.js'
 
-const express = require('express')
-const path = require('path')
-app.use(express.static(path.join(__dirname + "/public")))
-const PORT = process.env.PORT || 5000
-app.listen(PORT)
-
-
 const app = express()
 
 app.use(cors())
@@ -23,12 +16,8 @@ try {
     console.log(`El error de conección es: ${error}`)
 }
 
-/*
-app.get('/', (req, res)=>{
-    res.send('Tu mama en 4')
-})*/
+const port = process.env.PORT || 8000;
 
-
-/*app.listen(8000, ()=>{
+app.listen(port, ()=>{
     console.log('Server UP running in http://localhost:8000/')
-})*/
+})

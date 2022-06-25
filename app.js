@@ -19,7 +19,14 @@ try {
 app.get('/', (req, res)=>{
     res.send('Tu mama en 4')
 })*/
-/*
+
+module.exports = {
+    HOST: "us-cdbr-east-05.cleardb.net",
+    USER: "bc5b707b7c83c6",
+    PASSWORD: "d2f7120b",
+    DB: "heroku_e37b227742202c3"
+};
+
 app.listen(8000, ()=>{
     console.log('Server UP running in http://localhost:8000/')
-})*/
+})

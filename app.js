@@ -27,6 +27,12 @@ module.exports = {
     DB: "heroku_e37b227742202c3"
 };
 
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
+
+/*
 app.listen(8000, ()=>{
     console.log('Server UP running in http://localhost:8000/')
-})
+})*/

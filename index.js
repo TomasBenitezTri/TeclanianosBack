@@ -16,7 +16,7 @@ try {
     console.log(`El error de conección es: ${error}`)
 }
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3306;
 
 app.listen(port, ()=>{
     console.log('Server UP running in http://localhost:8000/')

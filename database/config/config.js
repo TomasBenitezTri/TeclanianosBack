@@ -13,7 +13,7 @@ module.exports = {
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_app",
+    "database": "tomas_backteclab",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": 0

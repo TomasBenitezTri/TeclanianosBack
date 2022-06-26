@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('database_app', 'root', '',{
-    host: 'localhost',
+const db = new Sequelize('tomas_backteclab', 'tomas_userteclab', 'adivinala',{
+    host: 'mysql-tomas.alwaysdata.net',
     dialect: 'mysql'
 })
 
